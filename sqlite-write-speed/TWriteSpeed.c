@@ -37,7 +37,7 @@ unsigned long function_a(unsigned long i, unsigned long j)
 
 int main (int argc, char *argv[])
 {
-  unsigned long total = 0, repeat1 = 10, repeat2 = 1000;
+  unsigned long total = 0, repeat1 = 1000, repeat2 = 8000;
 
   nb_calls++;
   if(argc > 1) repeat1 = atoi(argv[1]);

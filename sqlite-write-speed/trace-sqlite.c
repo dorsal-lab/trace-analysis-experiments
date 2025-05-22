@@ -15,7 +15,7 @@ static sqlite3_stmt *log_function_entry, *log_function_exit;
 static unsigned transaction_insertions;
 static unsigned cpuid, vpid, vtid;
 
-void __attribute__((destructor)) trace_database_fini();
+void __attribute__((destructor)) trace_database_finalize();
 void __attribute__((constructor)) trace_database_init();
 
 static void Check(int ret, unsigned lineno, char *msg)
@@ -55,7 +55,7 @@ void trace_database_init()
 }
 
 // Finalize the database by ending the ongoing transactions and closing the files
-void trace_database_fini()
+void trace_database_finalize()
 {
   char *msg = 0;
   int ret;
