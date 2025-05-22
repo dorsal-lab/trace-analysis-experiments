@@ -27,8 +27,8 @@ Most recent tracers (ftrace, LTTng, uftrace, perf, etc...) use a binary format t
 ### Prerequisites
 
 - SQLite 3 library (debian: libsqlite3-dev, centos: sqlite-devel arch-linux: sqlite)
-- [LTTng-tools] (https://lttng.org/docs/v2.13/#doc-installing-lttng)
-- [LTTng-UST] (https://lttng.org/docs/v2.13/#doc-installing-lttng)
+- [LTTng-tools](https://lttng.org/docs/v2.13/#doc-installing-lttng)
+- [LTTng-UST](https://lttng.org/docs/v2.13/#doc-installing-lttng)
 
 ### Steps
 
